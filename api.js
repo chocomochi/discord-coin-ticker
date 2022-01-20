@@ -17,6 +17,9 @@ let COIN_LOGO = null // to be updated later
 let COIN_SYMBOL = null // to be updated later
 
 const getLogo = async(url, id) => {
+  if(!fs.existsSync(logo_path))
+    fs.mkdirSync(logo_path)
+    
   const path = `${logo_path}/${id}.webp`
   const writer = fs.createWriteStream(path)
 
