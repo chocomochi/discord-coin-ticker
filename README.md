@@ -11,6 +11,7 @@ So I combined two languages (NodeJS and Python) where one language would serve a
 
 We would also need to have python installed.
 
+
 Module requirements for each language:
 1. Python
     - flask
@@ -30,16 +31,21 @@ After installing all essential modules, we are now ready to run the `main.py`:
 python main.py
 ```
 
+
+
 By doing this the server (flask) inside the `main.py` file will start to look for HTTP requests, forever. Also, take note that you should have a password in your `.env` or environment variable to make the server secured, somehow lol.
 
 After turning on the server/running `main.py`, we can make a POST HTTP request to, like give a handshake, to our server The data to send to the POST request will include the coin (to tick), currency, and other discord server/bot info.
+
+
 
 The POST Request details:
 
 - URL:
     ```
-    localhost/getCoin
+    http://localhost/getCoin
     ```
+
 
 - POST body/data:
     ```
@@ -56,8 +62,3 @@ The POST Request details:
     ```
 
 Then after that, main.py should do its magic and you should see your bot alive and ticking in the server you wanted it to be!!
-
-
-
-
-
