@@ -11,7 +11,6 @@ So I combined two languages (NodeJS and Python) where one language would serve a
 
 We would also need to have python installed.
 
-
 Module requirements for each language:
 1. Python
     - flask
